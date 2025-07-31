@@ -1,6 +1,6 @@
 # FPGA Implementation of 1101 Sequence Detector
 
-This project implements a sequence detector for the binary pattern **1101** on the Nexys DDR FPGA board.  
+This project implements a sequence detector for the binary pattern **1101** on the Nexys4 DDR FPGA board.  
 The design includes **Finite State Machines (FSMs)** using **both Mealy and Moore models**, covering **overlapping and non-overlapping detection**.  
 The project also compares **Binary, Gray, and One-Hot state encodings** to evaluate performance, power, and switching activity.
 
