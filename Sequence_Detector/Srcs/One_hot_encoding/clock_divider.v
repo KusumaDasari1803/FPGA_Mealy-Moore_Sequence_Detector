@@ -1,9 +1,10 @@
 `timescale 1ns / 1ps
-module clock_divider #(parameter DIVISOR = 50_000_000)(
+module clock_divider (
     input clk, rst,
     output reg slow_clk
 );
-    reg [25:0] counter;  
+    reg [25:0] counter; 
+    parameter DIVISOR = 50_000_000 
 
     always @(posedge clk or negedge rst) begin
         if (!rst) begin
