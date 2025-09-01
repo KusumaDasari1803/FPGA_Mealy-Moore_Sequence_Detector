@@ -4,7 +4,7 @@ module clock_divider (
     output reg slow_clk
 );
     reg [25:0] counter; 
-    parameter DIVISOR = 50_000_000 
+    parameter DIVISOR = 50_000_000;
 
     always @(posedge clk or negedge rst) begin
         if (!rst) begin
